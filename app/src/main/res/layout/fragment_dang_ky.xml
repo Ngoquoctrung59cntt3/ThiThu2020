@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    tools:context=".DangKyFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Họ Tên Sinh Viên" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ngày Sinh Sinh Viên" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_weight="8"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                />
+
+            <ImageView
+                android:id="@+id/btndate"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_action_date" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Điện thoại Sinh Viên" />
+
+        <EditText
+            android:id="@+id/sdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chọn buổi học" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:id="@+id/rg"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:id="@+id/sang"
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:layout_weight="1"
+                android:text="Sáng" />
+            <RadioButton
+                android:layout_weight="1"
+                android:id="@+id/chieu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chiều" />
+            <RadioButton
+                android:layout_weight="1"
+                android:id="@+id/toi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tối" />
+        </RadioGroup>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chọn KHóa Học" />
+
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:text="Đăng Ký" />
+
+
+    </LinearLayout>
+    <!-- TODO: Update blank fragment layout -->
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

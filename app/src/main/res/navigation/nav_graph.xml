@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dangKyFragment">
+    <fragment
+        android:id="@+id/dangKyFragment"
+        android:name="vn.edu.ntu.thithu2020.DangKyFragment"
+        android:label="fragment_dang_ky"
+        tools:layout="@layout/fragment_dang_ky" >
+        <action
+            android:id="@+id/action_dangKyFragment_to_monHocFragment"
+            app:destination="@id/monHocFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/monHocFragment"
+        android:name="vn.edu.ntu.thithu2020.MonHocFragment"
+        android:label="fragment_mon_hoc"
+        tools:layout="@layout/fragment_mon_hoc" >
+        <action
+            android:id="@+id/action_monHocFragment_to_dangKyFragment"
+            app:destination="@id/dangKyFragment" />
+    </fragment>
+</navigation>
